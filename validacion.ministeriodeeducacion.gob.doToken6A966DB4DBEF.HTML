@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consulta de certificados — Maqueta de referencia</title>
+<style>
+:root{--ink:#242832;--muted:#69717b;--line:#dfe3e8;--accent:#9a333b;--paper:#fff;--bg:#f4f6f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#333;font:15px/1.45 Arial,Helvetica,sans-serif}
+.top{background:#fff;border-bottom:1px solid #e6e8eb}
+.top-inner{max-width:1100px;margin:auto;padding:22px 24px 14px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{color:#26344b;letter-spacing:.09em;font-size:13px;font-weight:700;line-height:1.45}
+.brand small{display:block;font-size:11px;letter-spacing:.12em;font-weight:400}
+.brand strong{display:block;color:var(--accent);font-size:17px;letter-spacing:.04em}
+.search{width:min(330px,45%);color:#777;font-size:13px}
+.searchbox{border:1px solid #e0e3e7;padding:10px 12px;margin-top:7px;color:#8a9098}
+nav{background:#fff;border-bottom:1px solid #e7e9ec}
+.nav-inner{max-width:1100px;margin:auto;padding:13px 24px;display:flex;gap:30px;flex-wrap:wrap;color:#4e5661;font-size:12px}
+main{max-width:900px;margin:24px auto 30px;padding:0 18px}
+.notice{background:#fff3cd;color:#66531c;border:1px solid #ead99b;border-radius:5px;padding:10px 14px;text-align:center;font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:14px}
+.panel{background:var(--paper);border:1px solid #cbd2da;border-radius:5px;overflow:hidden;box-shadow:0 2px 8px #17202b12}
+.panel-head{background:var(--ink);color:white;text-align:center;padding:15px 18px;font-weight:700;font-size:18px}
+.controls{padding:16px 18px 8px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.controls label{font-weight:700;font-size:13px}
+.token{border:1px solid #d8dde3;border-radius:4px;padding:9px 12px;color:#89919a;min-width:150px}
+button{background:var(--ink);color:#fff;border:0;border-radius:4px;padding:11px 22px;font-size:12px}
+.pdf{margin:12px 18px 6px}
+h1{font-size:28px;line-height:1.2;font-weight:500;margin:12px 18px 12px;color:#30343a}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:9px 12px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:700;background:#fff}
+td:first-child{width:31%;font-weight:700}
+tr:last-child{background:#f2f3f4}
+.footer{background:var(--ink);color:#d7dbe1;text-align:center;padding:32px 18px 26px;font-size:12px}
+.footer .seal{font-size:12px;letter-spacing:.1em;margin-bottom:12px;color:#fff}
+.footer p{margin:5px 0}
+.watermark{position:fixed;inset:0;pointer-events:none;display:grid;place-items:center;z-index:5;overflow:hidden}
+.watermark span{transform:rotate(-28deg);font-size:clamp(32px,7vw,86px);font-weight:800;letter-spacing:.12em;color:#9a333b;opacity:.075;white-space:nowrap}
+@media(max-width:600px){
+ .top-inner{align-items:flex-start;flex-direction:column;padding:16px}
+ .search{width:100%}.nav-inner{gap:14px;padding:12px 16px;font-size:11px}
+ main{margin:14px auto;padding:0 10px}.panel-head{font-size:16px}
+ h1{font-size:23px;margin-left:12px}
+ th,td{padding:8px 9px;font-size:12px}
+ td:first-child{width:39%}
+ .controls{padding:13px 12px}
+ .footer{padding:25px 14px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="top-inner">
+  <div class="brand"><small>GOBIERNO DE LA</small>REPÚBLICA DOMINICANA<strong>EDUCACIÓN</strong></div>
+  <div class="search">REPÚBLICA DOMINICANA<div class="searchbox">¿Qué estás buscando?</div><small>INICIO　 MAPA DEL SITIO　 CONTACTOS</small></div>
+ </div>
+</header>
+<nav><div class="nav-inner"><span>INICIO</span><span>SOBRE NOSOTROS</span><span>SERVICIOS</span><span>TRANSPARENCIA</span><span>NOTICIAS</span><span>CONTACTOS</span></div></nav>
+<main>
+ 
+ <section class="panel">
+  <div class="panel-head">Consulta de Certificados</div>
+  <div class="controls"><label>Código:</label><div class="token">Token del certificado</div><button type="button">BUSCAR</button></div>
+  <div class="pdf"><button type="button">VISTA DE REFERENCIA</button></div>
+  <h1>Certificado Nivel Secundaria</h1>
+  <table aria-label="Datos de ejemplo del certificado">
+   <thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+   <tbody>
+    <tr><td>Nombre Completo</td><td>ANDY ALMANZAR ROSARIO</td></tr>
+    <tr><td>IdEstudiante</td><td>1195870</td></tr>
+    <tr><td>RNE</td><td>AAR060330001</td></tr>
+    <tr><td>Nombre del Centro</td><td>RAMON MARRERO ARISTY</td></tr>
+    <tr><td>Código del Centro</td><td>06003839</td></tr>
+    <tr><td>Sección</td><td>N-E</td></tr>
+    <tr><td>Código Distrito</td><td>0775</td></tr>
+    <tr><td>Nombre Distrito</td><td>DISTRITO SAN FRANCISCO DE MACORIS SUR-E</td></tr>
+    <tr><td>Código Regional</td><td>07</td></tr>
+    <tr><td>Nombre Regional</td><td>SAN FRANCISCO DE MACORIS</td></tr>
+    <tr><td>Modalidad</td><td>ACADÉMICA</td></tr>
+    <tr><td>Especialidad</td><td>CIENCIA Y TECNOLOGÍA, ORD. 22'2017</td></tr>
+    <tr><td>Año Escolar</td><td>2019 - 2020</td></tr>
+    <tr><td>Convocatoria</td><td>0</td></tr>
+    <tr><td>Fecha de Registro</td><td>9/11/2020 2:39:54 PM</td></tr>
+    <tr><td>Estado</td><td>APROBÓ EL PLAN DE ESTUDIO</td></tr>
+   </tbody>
+  </table>
+ </section>
+</main>
+<footer class="footer">
+ <div class="seal">IDENTIDAD INSTITUCIONAL · ELEMENTOS GRÁFICOS OMITIDOS</div>
+ <p>Ministerio de Educación de la República Dominicana</p>
+ <p>Avenida Máximo Gómez esquina Santiago, No. 02 Gazcue, Distrito Nacional, República Dominicana.</p>
+ <p style="margin-top:18px">Tel.: 809.688.9700 | email: info@minerd.gob.do</p>
+ <p>Horario: De 7:30 a.m. a 4:30 p.m. de Lunes a Viernes.</p>
+ <p>Esta página es una maqueta visual y no valida certificados.</p>
+ <p>© Maqueta de referencia</p>
+</footer>
+
+</body>
+</html>
